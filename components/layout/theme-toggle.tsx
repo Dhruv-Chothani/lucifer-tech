@@ -1,3 +1,5 @@
+'use client'
+
 import { IconButton, useColorMode } from '@chakra-ui/react'
 import { FiMoon, FiSun } from 'react-icons/fi'
 

@@ -1,3 +1,5 @@
+'use client'
+
 import { MotionBox, MotionBoxProps } from './box'
 import React from 'react'
 

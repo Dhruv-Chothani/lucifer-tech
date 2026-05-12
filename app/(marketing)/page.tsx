@@ -1,3 +1,5 @@
+'use client'
+
 import {
   Box,
   ButtonGroup,
@@ -57,10 +59,6 @@ import faq from '#data/faq'
 import pricing from '#data/pricing'
 import testimonials from '#data/testimonials'
 
-export const metadata: Metadata = {
-  title: 'Lucifer Tech',
-  description: 'The React component library for startups',
-}
 
 const Home = () => {
   return (
