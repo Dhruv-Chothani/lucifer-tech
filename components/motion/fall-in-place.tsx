@@ -1,12 +1,15 @@
 'use client'
 
 import React from 'react'
+import { Transition } from 'framer-motion'
 
 import { MotionBox, MotionBoxProps } from './box'
 
-export const FallInPlace: React.FC<MotionBoxProps & { delay?: number }> = (
-  props,
-) => {
+export interface FallInPlaceProps extends MotionBoxProps {
+  delay?: number
+}
+
+export const FallInPlace: React.FC<FallInPlaceProps> = (props) => {
   const { children, delay = 0.2, ...rest } = props
   return (
     <MotionBox
@@ -17,7 +20,7 @@ export const FallInPlace: React.FC<MotionBoxProps & { delay?: number }> = (
         ease: 'easeOut',
         duration: 2,
         delay,
-      }}
+      } as any}
       {...rest}
     >
       {children}

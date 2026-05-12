@@ -18,7 +18,7 @@ export const Float: React.FC<
         repeat: Infinity,
         repeatDelay: 0,
         repeatType: 'reverse',
-      }}
+      } as any}
       {...rest}
     >
       {children}
